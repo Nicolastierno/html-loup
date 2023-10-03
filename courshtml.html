@@ -1,0 +1,1309 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La syntaxe HTML &#8211; Kourou</title>
+<meta name='robots' content='noindex, nofollow' />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kourou.oclock.io\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://kourou.oclock.io/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='style-css' href='https://kourou.oclock.io/content/themes/oclock/public/index.4ef2aaf9.css?ver=6.3.1' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://kourou.oclock.io/wp-json/" /><link rel="alternate" type="application/json" href="https://kourou.oclock.io/wp-json/wp/v2/ficherecap/511" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kourou.oclock.io/wp/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.1" />
+<link rel="canonical" href="https://kourou.oclock.io/ressources/fiche-recap/la-syntaxe-html/" />
+<link rel='shortlink' href='https://kourou.oclock.io/?p=511' />
+<link rel="alternate" type="application/json+oembed" href="https://kourou.oclock.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkourou.oclock.io%2Fressources%2Ffiche-recap%2Fla-syntaxe-html%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://kourou.oclock.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkourou.oclock.io%2Fressources%2Ffiche-recap%2Fla-syntaxe-html%2F&#038;format=xml" />
+<link rel="icon" href="https://kourou.oclock.io/content/uploads/2020/09/cropped-favicon-96x96-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://kourou.oclock.io/content/uploads/2020/09/cropped-favicon-96x96-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kourou.oclock.io/content/uploads/2020/09/cropped-favicon-96x96-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://kourou.oclock.io/content/uploads/2020/09/cropped-favicon-96x96-1-270x270.png" />
+
+</head>
+<body class="ficherecap-template-default single single-ficherecap postid-511 logged-in">
+
+<div class="wrapper">
+  <header class="topbar">
+  <div class="topbar__part">
+    <a class="logo" href="https://kourou.oclock.io">
+  <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" viewBox="-14.691 -14.656 188 188"><path d="M144.73 51.788c-12.773 0-23.13-10.356-23.13-23.13 0-5.044 1.62-9.707 4.36-13.508C112.88 5.61 96.74-.013 79.2-.013 35.11-.013.062 35.477.062 79.564.062 123.65 35.11 158.7 79.2 158.7c44.086 0 79.355-35.05 79.355-79.136 0-10.367-1.95-20.258-5.507-29.324-2.582.996-5.384 1.548-8.318 1.548zM79.2 123.43c-24.03 0-43.868-19.84-43.868-43.865 0-24.25 19.84-44.308 43.867-44.308 24.245 0 44.084 20.06 44.084 44.308 0 24.026-19.84 43.867-44.088 43.867l.004-.002z"/><path d="M144.692.168c-15.828 0-28.41 12.74-28.41 28.568 0 15.828 12.582 28.41 28.41 28.41s28.49-12.582 28.49-28.41S160.52.168 144.692.168zm-.014 49.575c-11.49 0-20.98-9.488-20.98-20.98 0-11.595 9.49-21.188 20.98-21.188 11.597 0 21.085 9.593 21.085 21.19 0 11.49-9.488 20.978-21.085 20.978z"/></svg>
+  <div class="logo__title">
+    <div class="logo__title__main">Kourou</div>
+    <div class="logo__title__sub">
+      Étudiant          </div>
+  </div>
+</a>    <div class="setting toggler-parent setting--menu">
+  <button data-target="sidebar" class="toggler setting__btn tooltip">
+    <i class="setting__icon icon icon-menu"></i>
+    <span class="tooltip__info tooltip__info--left">Menu</span>
+  </button>
+</div>    <div class="setting toggler-parent setting--search">
+  <button data-target="topsearch" class="toggler setting__btn tooltip">
+    <i class="setting__icon icon icon-search"></i>
+    <span class="tooltip__info tooltip__info--left">Recherche</span>
+  </button>
+</div>    
+<div class="cohort-selector toggler-parent">
+      <button class="cohort-selector__current toggler tooltip" data-target="cohortSelector">
+      <i class="cohort-selector__current__icon icon icon-globe"></i>
+      <span class="cohort-selector__name promo-name">Cheesecake</span> <i class="icon icon-chevron-down"></i>
+      <span class="tooltip__info tooltip__info--right">Ta promo : <span class="promo-name">Cheesecake </span></span>
+    </button>
+    
+      <ul class="cohort-selector__list" id="cohortSelector">
+        
+          
+                    
+                          </ul>
+    </div>
+  </div>
+  <div class="topbar__part">
+    <div class="topbar__part toggler-parent">
+  <form action="https://kourou.oclock.io" class="search-form" id="topsearch">
+    <input class="search-form__field" type="text" name="s" placeholder="Chercher sur Kourou" required />
+    <button class="search-form__submit"><i class="icon icon-search"></i></button>
+    <input type="hidden" name="searchtype" value="refined" />
+  </form>
+</div>  </div>
+  <div class="topbar__part">
+    
+<a id="alert-item--full" href="https://kourou.oclock.io/notifications" class="setting toggler-parent ">
+  <button class="setting__btn tooltip">
+    <span class="tooltip__info tooltip__info--left">
+              Plusieurs notifications t'attendent
+          </span>
+    <span class="alert">
+      <i class="icon icon-bell"></i>
+    </span>
+  </button>
+</a>
+
+<div id="alert-item--empty" class="setting toggler-parent hidden">
+  <button class="setting__btn tooltip">
+    <span class="tooltip__info tooltip__info--left">Aucune notification</span>
+    <span class="alert alert--off">
+      <i class="icon icon-bell-off"></i>
+    </span>
+  </button>
+</div>    <div class="setting toggler-parent flag_topbar">
+  <button data-target="flag" class="toggler setting__btn tooltip flag_topbar_icon">
+    <span class="tooltip__info tooltip__info--left">
+      Alerter l'équipe O'clock
+    </span>
+    <span class="setting__btn__flag">
+      <i class="icon icon-flag"></i>
+    </span>
+  </button>
+  <div class="setting__panel" id="flag">
+    <ul class="setting__panel__list">
+      <li class="" title="Absence Formateur">
+        <a href="https://kourou.oclock.io/signaler-absence/" title="Signalement d'absence">
+        ⚠ Mon formateur est absent 
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>    <div class="setting toggler-parent">
+  <button data-target="mode" class="toggler setting__btn tooltip">
+    <i class="setting__icon icon icon-settings"></i>
+    <span class="tooltip__info tooltip__info--right">Paramètres</span>
+  </button>
+  <div class="setting__panel" id="mode">
+    <div class="setting__panel__title">Thème <i class="icon icon-feather"></i><span class="setting__panel__subtitle"><span id="modeName">Light</span> <span id="colorName">Tardis</span></span></div>
+    <div class="setting__part">
+      <button data-info="light" class="action-button mode-switcher">
+        Light
+      </button>
+      <button data-info="dark" class="action-button action-button--alt mode-switcher">
+        Dark
+      </button>
+    </div>
+    <div class="setting__part">
+      <button data-info="orange" class="action-button action-button--circle action-button--orange tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Clémentine</span>
+      </button>
+      <button data-info="yellow" class="action-button action-button--circle action-button--yellow tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Curry</span>
+      </button>
+      <button data-info="green" class="action-button action-button--circle action-button--green tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Pesto</span>
+      </button>
+      <button data-info="default" class="action-button action-button--circle action-button--default tooltip color-switcher">
+        <span class="tooltip__info">O'clock</span>
+      </button>
+      <button data-info="blue" class="action-button action-button--circle action-button--blue tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Tardis</span>
+      </button>
+      <button data-info="purple" class="action-button action-button--circle action-button--purple tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Chou rouge</span>
+      </button>
+      <button data-info="pink" class="action-button action-button--circle action-button--pink tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Marshmallow</span>
+      </button>
+      <button data-info="red" class="action-button action-button--circle action-button--red tooltip color-switcher action-button--off">
+        <span class="tooltip__info">Coquelicot</span>
+      </button>
+    </div>
+    <div class="setting__part">
+      <div class="setting__panel__title">Menu <i class="icon icon-layout"></i><span class="setting__panel__subtitle">Réduire sur très grand écran</span></div>
+      <button data-info="menu-collpsable" class="action-button menu-switcher">
+        Oui
+      </button>
+      <button data-info="menu-not-collpsable" class="action-button action-button--alt menu-switcher">
+        Non
+      </button>
+    </div>
+  </div>
+</div>    <div class="setting toggler-parent">
+  <button data-target="profile" class="toggler setting__btn">
+    <img onerror="this.src='https://cockpit.oclock.io/oAssets/images/course/empty-mugshot.png'" src="https://avatar.github.com/Mickaeldolle" alt="Mickael DOLLE" class="setting__img">
+    <span class="setting__label">Mes informations <i class="icon icon-chevron-down"></i></span>
+  </button>
+  <div class="setting__panel" id="profile">
+    <ul class="setting__panel__list">
+      <li class="setting__panel__list__item" title="Nom affiché">
+        <i class="icon icon-send"></i>
+        Mickael DOLLE      </li>
+      <li class="setting__panel__list__item" title="Pseudo Discord">
+        <i class="icon icon-headphones"></i>
+        #mickaeldolle      </li>
+      <li class="setting__panel__list__item" title="Compte Github">
+        <i class="icon icon-github"></i>
+        <a href="https://github.com/Mickaeldolle" target="_blank">Mickaeldolle</a>      </li>
+      <li class="setting__panel__list__item" title="Adresse mail">
+        <i class="icon icon-at-sign"></i>
+        mickael.dolle@oclock.school      </li>
+      <hr>
+      <li class="setting__panel__list__item">
+        <i class="icon icon-edit"></i>
+        <a href="https://kourou.oclock.io/mes-informations/" title="Modifier">
+          Modifier mes informations
+        </a>
+      </li>
+      <hr>
+    </ul>
+    <a class="action-button" href="https://kourou.oclock.io/wp/wp-login.php?action=logout&amp;_wpnonce=64bd8db576">
+      <i class="icon icon-log-out"></i>
+      Se déconnecter
+    </a>
+  </div>
+</div>  </div>
+</header>  <aside id="sidebar" class="sidebar toggler-parent sidebar--collapsed">
+  <div class="sidebar__inner">
+  <div class="sidebar__menu">
+    
+<div class="user">
+  <img onerror="this.src='https://cockpit.oclock.io/oAssets/images/course/empty-mugshot.png'" class="user__img" src="https://avatar.github.com/Mickaeldolle" alt="Mickael DOLLE">
+  <div class="user__title">Mickael DOLLE</div>
+  <div class="user__subtitle"><a href="https://github.com/Mickaeldolle" target="_blank">Mickaeldolle</a></div>
+</div>    <nav class="top-nav">
+  <!-- Liens utiles -->
+      <div class="top-nav__links">
+      <span class="top-nav__links__item top-nav__links__item--placeholder">
+        <i class="icon icon-link"></i>
+      </span>
+      <ul class="top-nav__links__list">
+        <li><a class="top-nav__links__item tooltip" href="https://github.com/O-clock-Cheesecake" target="_blank"><i class="icon icon-github"></i><span class="tooltip__info">Github</span></a></li>
+        <li><a class="top-nav__links__item tooltip" href="https://oclock-cheesecake.slack.com/" target="_blank"><i class="icon icon-slack"></i><span class="tooltip__info">Slack</span></a></li>
+        <li><a class="top-nav__links__item tooltip" href="https://drive.google.com/drive/folders/1ECwCqCSL7r-wm8sOM0wb2yj-tCGG7hgq" target="_blank"><i class="icon icon-play"></i><span class="tooltip__info">Replays</span></a></li>
+      </ul>
+    </div>
+  
+  <ul class="top-nav__list">
+
+
+    <!-- Ressources -->
+
+    <li class="top-nav__list__item ">
+      <a href="https://kourou.oclock.io/ressources" class="top-nav__list__item__link"><i class="icon icon-package"></i> Ressources</a>
+      <ul class="top-nav__list__list">
+        
+            <li >
+              <a class="top-nav__list__list__item" href="https://kourou.oclock.io/ressources/lexique/">Définitions du lexique</a>
+            </li>
+
+        
+            <li class="active" >
+              <a class="top-nav__list__list__item" href="https://kourou.oclock.io/ressources/fiches-recap/">Fiches récap</a>
+            </li>
+
+        
+            <li >
+              <a class="top-nav__list__list__item" href="https://kourou.oclock.io/">Récapitulatifs quotidiens</a>
+            </li>
+
+        
+            <li >
+              <a class="top-nav__list__list__item" href="https://kourou.oclock.io/ressources/quiz/">Quiz</a>
+            </li>
+
+              </ul>
+    </li>
+
+    <!-- Communications -->
+
+    <li class="top-nav__list__item ">
+      <a href="https://kourou.oclock.io/communications" class="top-nav__list__item__link"><i class="icon icon-radio"></i> Communications</a>
+      <ul class="top-nav__list__list">
+        
+            <li >
+              <a class="top-nav__list__list__item" href="https://kourou.oclock.io/communications/annonces/">Annonces de la promo</a>
+            </li>
+
+        
+            <li >
+              <a class="top-nav__list__list__item" href="https://kourou.oclock.io/communications/informations/">Informations aux promos</a>
+            </li>
+
+              </ul>
+    </li>
+
+    <!-- Feedbacks -->
+
+    <li class="top-nav__list__item">
+      <div class="top-nav__list__item__link"><i class="icon icon-message-square"></i> Feedbacks</div>
+            <ul class="top-nav__list__list">
+                  <li><span class="top-nav__list__list__item top-nav__list__list__item--nolink">Aucun feedback pour le moment.</span></li>
+              </ul>
+    </li>
+
+    <!-- Attendance -->
+
+    
+      <li class="top-nav__list__item">
+        <div class="top-nav__list__item__link"><i class="icon icon-calendar"></i> Assiduité</div>
+                <ul class="top-nav__list__list">
+                        <li><a class="top-nav__list__list__item" href="https://kourou.oclock.io/assiduite/8268-assiduite-aout-2023/">Assiduité août 2023</a></li>
+                          <li><a class="top-nav__list__list__item" href="https://kourou.oclock.io/assiduite/8268-assiduite-juillet-2023/">Assiduité juillet 2023</a></li>
+                    </ul>
+      </li>
+
+    
+  </ul>
+</nav>  </div>
+  <div class="sidebar__action">
+  <a class="action-button" href="https://kourou.oclock.io/nos-conseils/"><i class="icon icon-award"></i>Nos conseils</a>
+</div>  </div>
+</aside>
+  
+  <main class="main">
+    
+
+<div class="segment">
+  
+  <h1 class="segment__title">Les fiches récap de l'école O'clock</h1>
+
+<div class="tools tools--light">
+  <button type="button" class="tools__btn tooltip tools__btn--print">
+    <span class="tooltip__info">Imprimer</span>
+    <i class="icon icon-printer"></i>
+  </button>
+  <button data-size="small" type="button" class="tools__btn tools__btn--font tooltip">
+    <span class="tooltip__info">Texte petit</span>
+    <i class="icon icon-type icon--half"></i>
+  </button>
+  <button data-size="medium" type="button" class="tools__btn tools__btn--font tools__btn--active tooltip">
+    <span class="tooltip__info">Texte moyen</span>
+    <i class="icon icon-type"></i>
+  </button>
+  <button data-size="big" type="button" class="tools__btn tools__btn--font tooltip">
+    <span class="tooltip__info">Texte gros</span>
+    <i class="icon icon-type icon--double"></i>
+  </button>
+      <button type="button" class="tools__btn tools__btn--edit tooltip">
+      <span class="tooltip__info">Proposer une modification de la fiche</span>
+      <i class="icon icon-edit"></i>
+    </button>
+  </div>  <div class="segment__content">
+    
+<article class="recap as-anchor">
+  <header class="recap__header">
+  <div>
+    <div class="list">
+              <span class="list__item"><a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/html/">Html</a></span>
+          </div>
+    <div class="list">
+          </div>
+  </div>
+  <div class="recap__title">
+        <h1>La syntaxe HTML</h1>
+          <div class="recap__meta">Dernière modification: 21 mars 2023</div>
+      </div>
+  </header>
+
+  <div id="recap-content" class="recap-content">
+    
+    <p>HTML signifie <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage ou Langage de balises pour l&rsquo;Hypertexte</p>
+<p>Il sert à structurer le contenu, il représente le <strong>fond</strong></p>
+<p>Le HTML s&rsquo;écrit dans un fichier possédant l&rsquo;extension <code>.html</code></p>
+<hr />
+<h2 id="commentaires" class="is-anchor">Commentaires</h2>
+<p>Pour écrire des commentaires au sein d&rsquo;un code HTML il faudra utiliser une syntaxe particulière commençant par <code>&lt;!--</code> et finissant par <code>--&gt;</code></p>
+<pre><code class="language-html">&lt;!-- Je suis un commentaire --&gt;
+
+&lt;!-- 
+  Un commentaire peut être écrit
+  sur plusieurs lignes
+ --&gt;</code></pre>
+<hr />
+<h2 id="balises-ou-balise" class="is-anchor">Balises ou balise ?</h2>
+<p><strong>Un exemple d&rsquo;élément HTML</strong></p>
+<pre><code class="language-html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
+<p>Composé le plus souvent de 2 balises, ici pour notre élément de paragraphe</p>
+<ul>
+<li>balise ouvrante <code>&lt;p&gt;</code></li>
+<li>balise fermante <code>&lt;/p&gt;</code></li>
+</ul>
+<p>Le contenu de l&rsquo;élément se trouve entre ces 2 balises</p>
+<pre><code class="language-html">&lt;p&gt;Phrase très courte&lt;/p&gt; &lt;!-- Paragraphe de texte --&gt;
+&lt;strong&gt;Notion importante&lt;/strong&gt; &lt;!-- Notion importante dans le texte --&gt;
+...</code></pre>
+<p>Certains éléments HTML, n&rsquo;ayant pas vocation à contenir du texte ou d&rsquo;autres éléments, s&rsquo;écrivent avec une balise dite autofermante</p>
+<pre><code class="language-html">&lt;br&gt; &lt;!-- Saut de ligne --&gt;
+&lt;hr&gt; &lt;!-- Ligne de séparation horizontale --&gt;
+...</code></pre>
+<p>La liste exhaustive des <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element">éléments HTML</a> sur Mozilla Developer Network</p>
+<hr />
+<h2 id="attributs" class="is-anchor">Attributs</h2>
+<p>Les attributs viennent compléter un élément HTML avec des informations supplémentaires</p>
+<p>Par exemple un lien, aura besoin d&rsquo;un contenu mais également d&rsquo;une adresse de destination</p>
+<pre><code class="language-html">&lt;a href="https://github.com"&gt;Un lien vers GitHub&lt;/a&gt;</code></pre>
+<p>Pour un lien, l&rsquo;adresse de destination sera exprimée avec l&rsquo;attribut <code>href</code></p>
+<p>Il existe un cetain nombre d&rsquo;attributs universels comme</p>
+<ul>
+<li><code>class</code> permet d&rsquo;ajouter une liste de classes utilisable en CSS ou en JavaScript</li>
+<li><code>id</code> permet d&rsquo;indiquer un identifiant unique qui peut être ciblé par un lien, du CSS ou du JavaScript</li>
+<li><code>title</code> permet d&rsquo;ajouter un texte descriptif du contenu souvent représenté par une bulle flottante</li>
+<li>etc &#8230;</li>
+</ul>
+<p>La liste exhaustive des <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels">attributs universels</a> sur Mozilla Developer Network</p>
+<p>Un certain nombre d&rsquo;éléments HTML possède des attributs spécifiques, le plus simple est de se référer aux pages spécifiques des différents <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element">éléménts HTML</a> éxistant.</p>
+<hr />
+<h2 id="un-peu-despace-que-diable" class="is-anchor">Un peu d&rsquo;espace que diable !</h2>
+<p>Le navigateur interprète le code HTML et livre le résultat de cette interprétation. <code>&lt;p&gt;Mon contenu&lt;/p&gt;</code> dans la source HTML sera interprété puis affiché comme ceci <code>Mon contenu</code>.</p>
+<p>Lors de son interprétation, le navigateur ignore également un certain nombre de chose comme les sauts de lignes, les tabulations ou les espaces répétés</p>
+<pre><code class="language-html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code></pre>
+<pre><code class="language-html">&lt;p&gt;
+  Lorem ipsum 
+  dolor 
+
+  sit amet, 
+
+  consectetur     adipiscing 
+
+            elit.
+&lt;/p&gt;</code></pre>
+<p>Les 2 codes ci-dessus donneront le même résultat</p>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</code></pre>
+<hr />
+<h2 id="indentation" class="is-anchor">Indentation</h2>
+<p>Sachant que les tabulations, les espaces répétés ou les sauts de lignes ne sont pas interprétés, il convient de structurer la source HTML afin de la rendre plus lisible et plus simple à maintenir.</p>
+<pre><code class="language-html">&lt;article&gt;&lt;p&gt;Lorem ipsum dolor &lt;strong&gt;sit amet&lt;/strong&gt;, consectetur adipiscing elit.&lt;/p&gt;&lt;/article&gt;</code></pre>
+<pre><code class="language-html">&lt;article&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor &lt;strong&gt;sit amet&lt;/strong&gt;, 
+    consectetur adipiscing elit.
+  &lt;/p&gt;
+&lt;/article&gt;</code></pre>
+<p>En comparaison, les extraits ci-dessus sont équivalents en terme de HTML par contre au niveau de la lisibilité&#8230;</p>
+<hr />
+<h2 id="la-famille-cest-important" class="is-anchor">La famille c&rsquo;est important !</h2>
+<p><img decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Floral_matryoshka_set_1.JPG/300px-Floral_matryoshka_set_1.JPG" alt="Poupées russes" /></p>
+<p>Le HTML est par nature voué à être structuré par encapsulation ou par imbrication.</p>
+<p><code>&lt;body&gt;</code> contient <code>&lt;article&gt;</code> qui contient <code>&lt;h1&gt;</code> (un titre) et <code>&lt;p&gt;</code> (un paragraphe de texte).</p>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;article&gt;
+    &lt;h1&gt;
+      Lorem ipsum
+    &lt;/h1&gt;
+    &lt;p&gt;
+      Vivamus vel vestibulum mauris.
+      Nam sed est a orci iaculis mattis eu non ante. 
+      Vivamus aliquet purus non tincidunt posuere.
+    &lt;/p&gt;
+  &lt;/article&gt;
+&lt;/body&gt;</code></pre>
+<ul>
+<li><code>&lt;body&gt;</code> est
+<ul>
+<li>le parent de <code>&lt;article&gt;</code></li>
+<li>l&rsquo;ancêtre de <code>&lt;h1&gt;</code></li>
+<li>l&rsquo;ancêtre de <code>&lt;p&gt;</code></li>
+</ul>
+</li>
+<li><code>&lt;article&gt;</code> est
+<ul>
+<li>l&rsquo;enfant de <code>&lt;body&gt;</code></li>
+<li>le parent de <code>&lt;h1&gt;</code></li>
+<li>le parent de <code>&lt;p&gt;</code></li>
+</ul>
+</li>
+<li><code>&lt;p&gt;</code> est
+<ul>
+<li>le frère de <code>&lt;h1&gt;</code></li>
+<li>l&rsquo;enfant de <code>&lt;article&gt;</code></li>
+<li>le descendant de <code>&lt;body&gt;</code></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="types-d%c3%a9l%c3%a9ments" class="is-anchor">Types d&rsquo;éléments</h2>
+<p>Les 2 types principaux sont <code>block</code> et <code>inline</code></p>
+<p>Par exemple</p>
+<table>
+<thead>
+<tr>
+<th>block</th>
+<th>inline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;p&gt;</code><br />
+<code>&lt;h1&gt;</code>&#8230;<code>&lt;h6&gt;</code><br />
+<code>&lt;main&gt;</code><br />
+<code>&lt;section&gt;</code><br />
+<code>&lt;article&gt;</code><br />
+<code>&lt;div&gt;</code><br />
+&#8230;</td>
+<td><code>&lt;a&gt;</code><br />
+<code>&lt;em&gt;</code><br />
+<code>&lt;strong&gt;</code><br />
+<code>&lt;img&gt;</code><br />
+<code>&lt;abbr&gt;</code><br />
+<code>&lt;span&gt;</code><br />
+&#8230;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="les-%c3%a9l%c3%a9ments-en-bloc" class="is-anchor">Les éléments <a href="https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_bloc">« en bloc »</a></h3>
+<ul>
+<li>commencent sur une nouvelle ligne</li>
+<li>occupent le maximum d&rsquo;espace disponible (la largeur de leurs conteneurs)</li>
+<li>peuvent contenir des éléments <code>block</code> ou <code>inline</code></li>
+</ul>
+<h3 id="les-%c3%a9l%c3%a9ments-en-ligne" class="is-anchor">Les éléments <a href="https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_ligne">« en ligne »</a></h3>
+<ul>
+<li>suivent le fil du texte</li>
+<li>occupent l&rsquo;espace de leur contenu (la largeur de leurs contenus)</li>
+<li>ne peuvent contenir que des éléments <code>inline</code>; seule exception, le lien <code>&lt;a&gt;</code> qui lui peut contenir des éléments de type <code>block</code></li>
+</ul>
+<h3 id="les-autres-types" class="is-anchor">Les autres types</h3>
+<p>D&rsquo;autres types existent comme</p>
+<ul>
+<li><strong>list item</strong> <code>&lt;li&gt;</code></li>
+<li><strong>table</strong> <code>&lt;table&gt;</code></li>
+<li>etc&#8230;</li>
+</ul>
+<blockquote><p>Pour aller plus loin avec les types d&rsquo;éléments, la page sur les <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Cat%C3%A9gorie_de_contenu">catégories de contenu</a> du MDN est très complète</p></blockquote>
+<hr />
+<h2 id="les-liens" class="is-anchor">Les liens</h2>
+<p>Les liens hypertextes sont la base du web, ils permettent de naviguer au sein d&rsquo;un même site ou vers des sites distants.</p>
+<p>Plusieurs types de cibles sont donc possible</p>
+<ul>
+<li>Liens dans la même page | <strong>les ancres</strong></li>
+<li>Liens dans d&rsquo;autres pages du même site | <strong>les chemins relatifs</strong></li>
+<li>Liens vers des sites distants | <strong>les chemins absolus</strong></li>
+</ul>
+<p>Quelque soit la cible, l&rsquo;élément HTML reste le même, il s&rsquo;agit de <code>&lt;a&gt;</code>; l&rsquo;attribut <code>href</code> permettra de différencier les différentes destinations</p>
+<h3 id="les-ancres" class="is-anchor">Les ancres</h3>
+<p>Les ancres permettent de naviguer dans la même page grâce à l&rsquo;attribut <code>id</code></p>
+<pre><code class="language-html">&lt;header id="header-page"&gt;
+  &lt;h1&gt;Le blog&lt;/h1&gt;
+  ...
+&lt;/header&gt;
+
+...
+
+&lt;a href="#header-page"&gt;Retour en haut de la page&lt;/a&gt;</code></pre>
+<h3 id="url-relative" class="is-anchor">URL relative</h3>
+<p>Le chemin relatif vers un fichier depuis la page courante</p>
+<pre>  + articles
+     - hero-corp.html
+     - jessica-jones.html
+  - index.html
+</pre>
+<p>En simulant une navigation entre les différents fichiers, la structure relative est plus claire</p>
+<p>Depuis <strong>index.html</strong></p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href="index.html"&gt;Accueil&lt;/a&gt; &lt;!--page courante--&gt;
+  &lt;a href="articles/hero-corp.html"&gt;Hero Corp&lt;/a&gt;
+  &lt;a href="articles/jessica-jones.html"&gt;Jessica Jones&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+<p>Pour atteindre <code>Hero Corp</code> il faut d&rsquo;abord aller dans <code>articles/</code>, le répertoire qui le contient</p>
+<p>Depuis <strong>articles/hero-corp.html</strong></p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href="../index.html"&gt;Accueil&lt;/a&gt;
+  &lt;a href="hero-corp.html"&gt;Hero Corp&lt;/a&gt; &lt;!--page courante--&gt;
+  &lt;a href="jessica-jones.html"&gt;Jessica Jones&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+<p>Pour retourner à <code>Accueil</code> il faut d&rsquo;abord remonter d&rsquo;un le répertoire avec <code>../</code></p>
+<p>Pour aller à <code>Jessica Jones</code> il suffit de le cibler directement, il se trouve dans le même répertoire</p>
+<p>Depuis <strong>articles/jessica-jones.html</strong></p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href="../index.html"&gt;Accueil&lt;/a&gt;
+  &lt;a href="hero-corp.html"&gt;Hero Corp&lt;/a&gt; 
+  &lt;a href="jessica-jones.html"&gt;Jessica Jones&lt;/a&gt; &lt;!--page courante--&gt;
+&lt;/nav&gt;</code></pre>
+<h3 id="url-absolue" class="is-anchor">URL absolue</h3>
+<p>Les URLs absolues sont composées de 3 parties</p>
+<p>Exemple : <code>http://blog-heroique.com/articles/hero-corp.html</code></p>
+<ul>
+<li><strong>le protocle</strong> <code>http://</code></li>
+<li><strong>le domaine</strong> <code>blog-heroique.com</code></li>
+<li><strong>le chemin du fichier</strong> <code>articles/hero-corp.html</code></li>
+</ul>
+
+  </div>
+
+      <div id="recap-edit-container" class="recap-edit-container recap-edit-container--hidden">
+
+        
+            <h2>Édition de la fiche</h2>
+        <form method="post" class="recap-edit-form">
+            <input type="hidden" id="student_update_fiche_511" name="student_update_fiche_511" value="92e55668c0" /><input type="hidden" name="_wp_http_referer" value="/ressources/fiche-recap/la-syntaxe-html/" />
+            <div id="wp-editpost-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='dashicons-css' href='https://kourou.oclock.io/wp/wp-includes/css/dashicons.min.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='editor-buttons-css' href='https://kourou.oclock.io/wp/wp-includes/css/editor.min.css?ver=6.3.1' type='text/css' media='all' />
+<div id="wp-editpost-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="20" autocomplete="off" cols="40" name="editpost" id="editpost">HTML signifie &lt;strong&gt;H&lt;/strong&gt;yper&lt;strong&gt;T&lt;/strong&gt;ext &lt;strong&gt;M&lt;/strong&gt;arkup &lt;strong&gt;L&lt;/strong&gt;anguage ou Langage de balises pour l'Hypertexte
+
+Il sert à structurer le contenu, il représente le &lt;strong&gt;fond&lt;/strong&gt;
+
+Le HTML s'écrit dans un fichier possédant l'extension &lt;code&gt;.html&lt;/code&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="commentaires" class="is-anchor"&gt;Commentaires&lt;/h2&gt;
+Pour écrire des commentaires au sein d'un code HTML il faudra utiliser une syntaxe particulière commençant par &lt;code&gt;&amp;lt;!--&lt;/code&gt; et finissant par &lt;code&gt;--&amp;gt;&lt;/code&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;!-- Je suis un commentaire --&amp;gt;
+
+&amp;lt;!-- 
+  Un commentaire peut être écrit
+  sur plusieurs lignes
+ --&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="balises-ou-balise" class="is-anchor"&gt;Balises ou balise ?&lt;/h2&gt;
+&lt;strong&gt;Un exemple d'élément HTML&lt;/strong&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+Composé le plus souvent de 2 balises, ici pour notre élément de paragraphe
+&lt;ul&gt;
+ 	&lt;li&gt;balise ouvrante &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;balise fermante &lt;code&gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+Le contenu de l'élément se trouve entre ces 2 balises
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;p&amp;gt;Phrase très courte&amp;lt;/p&amp;gt; &amp;lt;!-- Paragraphe de texte --&amp;gt;
+&amp;lt;strong&amp;gt;Notion importante&amp;lt;/strong&amp;gt; &amp;lt;!-- Notion importante dans le texte --&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+Certains éléments HTML, n'ayant pas vocation à contenir du texte ou d'autres éléments, s'écrivent avec une balise dite autofermante
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;br&amp;gt; &amp;lt;!-- Saut de ligne --&amp;gt;
+&amp;lt;hr&amp;gt; &amp;lt;!-- Ligne de séparation horizontale --&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+La liste exhaustive des &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element"&gt;éléments HTML&lt;/a&gt; sur Mozilla Developer Network
+
+&lt;hr /&gt;
+
+&lt;h2 id="attributs" class="is-anchor"&gt;Attributs&lt;/h2&gt;
+Les attributs viennent compléter un élément HTML avec des informations supplémentaires
+
+Par exemple un lien, aura besoin d'un contenu mais également d'une adresse de destination
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;a href="https://github.com"&amp;gt;Un lien vers GitHub&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+Pour un lien, l'adresse de destination sera exprimée avec l'attribut &lt;code&gt;href&lt;/code&gt;
+
+Il existe un cetain nombre d'attributs universels comme
+&lt;ul&gt;
+ 	&lt;li&gt;&lt;code&gt;class&lt;/code&gt; permet d'ajouter une liste de classes utilisable en CSS ou en JavaScript&lt;/li&gt;
+ 	&lt;li&gt;&lt;code&gt;id&lt;/code&gt; permet d'indiquer un identifiant unique qui peut être ciblé par un lien, du CSS ou du JavaScript&lt;/li&gt;
+ 	&lt;li&gt;&lt;code&gt;title&lt;/code&gt; permet d'ajouter un texte descriptif du contenu souvent représenté par une bulle flottante&lt;/li&gt;
+ 	&lt;li&gt;etc ...&lt;/li&gt;
+&lt;/ul&gt;
+La liste exhaustive des &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels"&gt;attributs universels&lt;/a&gt; sur Mozilla Developer Network
+
+Un certain nombre d'éléments HTML possède des attributs spécifiques, le plus simple est de se référer aux pages spécifiques des différents &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element"&gt;éléménts HTML&lt;/a&gt; éxistant.
+
+&lt;hr /&gt;
+
+&lt;h2 id="un-peu-despace-que-diable" class="is-anchor"&gt;Un peu d'espace que diable !&lt;/h2&gt;
+Le navigateur interprète le code HTML et livre le résultat de cette interprétation. &lt;code&gt;&amp;lt;p&amp;gt;Mon contenu&amp;lt;/p&amp;gt;&lt;/code&gt; dans la source HTML sera interprété puis affiché comme ceci &lt;code&gt;Mon contenu&lt;/code&gt;.
+
+Lors de son interprétation, le navigateur ignore également un certain nombre de chose comme les sauts de lignes, les tabulations ou les espaces répétés
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;p&amp;gt;
+  Lorem ipsum 
+  dolor 
+
+  sit amet, 
+
+  consectetur     adipiscing 
+
+            elit.
+&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+Les 2 codes ci-dessus donneront le même résultat
+&lt;pre&gt;&lt;code&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="indentation" class="is-anchor"&gt;Indentation&lt;/h2&gt;
+Sachant que les tabulations, les espaces répétés ou les sauts de lignes ne sont pas interprétés, il convient de structurer la source HTML afin de la rendre plus lisible et plus simple à maintenir.
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;article&amp;gt;&amp;lt;p&amp;gt;Lorem ipsum dolor &amp;lt;strong&amp;gt;sit amet&amp;lt;/strong&amp;gt;, consectetur adipiscing elit.&amp;lt;/p&amp;gt;&amp;lt;/article&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;article&amp;gt;
+  &amp;lt;p&amp;gt;
+    Lorem ipsum dolor &amp;lt;strong&amp;gt;sit amet&amp;lt;/strong&amp;gt;, 
+    consectetur adipiscing elit.
+  &amp;lt;/p&amp;gt;
+&amp;lt;/article&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+En comparaison, les extraits ci-dessus sont équivalents en terme de HTML par contre au niveau de la lisibilité...
+
+&lt;hr /&gt;
+
+&lt;h2 id="la-famille-cest-important" class="is-anchor"&gt;La famille c'est important !&lt;/h2&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Floral_matryoshka_set_1.JPG/300px-Floral_matryoshka_set_1.JPG" alt="Poupées russes" /&gt;
+
+Le HTML est par nature voué à être structuré par encapsulation ou par imbrication.
+
+&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; contient &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; qui contient &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; (un titre) et &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; (un paragraphe de texte).
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;body&amp;gt;
+  &amp;lt;article&amp;gt;
+    &amp;lt;h1&amp;gt;
+      Lorem ipsum
+    &amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;
+      Vivamus vel vestibulum mauris.
+      Nam sed est a orci iaculis mattis eu non ante. 
+      Vivamus aliquet purus non tincidunt posuere.
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/article&amp;gt;
+&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; est
+&lt;ul&gt;
+ 	&lt;li&gt;le parent de &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;l'ancêtre de &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;l'ancêtre de &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+ 	&lt;li&gt;&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; est
+&lt;ul&gt;
+ 	&lt;li&gt;l'enfant de &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;le parent de &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;le parent de &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+ 	&lt;li&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; est
+&lt;ul&gt;
+ 	&lt;li&gt;le frère de &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;l'enfant de &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;le descendant de &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="types-d%c3%a9l%c3%a9ments" class="is-anchor"&gt;Types d'éléments&lt;/h2&gt;
+Les 2 types principaux sont &lt;code&gt;block&lt;/code&gt; et &lt;code&gt;inline&lt;/code&gt;
+
+Par exemple
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;block&lt;/th&gt;
+&lt;th&gt;inline&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;...&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;
+...&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;
+&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;
+...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="les-%c3%a9l%c3%a9ments-en-bloc" class="is-anchor"&gt;Les éléments &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_bloc"&gt;"en bloc"&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;commencent sur une nouvelle ligne&lt;/li&gt;
+ 	&lt;li&gt;occupent le maximum d'espace disponible (la largeur de leurs conteneurs)&lt;/li&gt;
+ 	&lt;li&gt;peuvent contenir des éléments &lt;code&gt;block&lt;/code&gt; ou &lt;code&gt;inline&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="les-%c3%a9l%c3%a9ments-en-ligne" class="is-anchor"&gt;Les éléments &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_ligne"&gt;"en ligne"&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;suivent le fil du texte&lt;/li&gt;
+ 	&lt;li&gt;occupent l'espace de leur contenu (la largeur de leurs contenus)&lt;/li&gt;
+ 	&lt;li&gt;ne peuvent contenir que des éléments &lt;code&gt;inline&lt;/code&gt;; seule exception, le lien &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; qui lui peut contenir des éléments de type &lt;code&gt;block&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="les-autres-types" class="is-anchor"&gt;Les autres types&lt;/h3&gt;
+D'autres types existent comme
+&lt;ul&gt;
+ 	&lt;li&gt;&lt;strong&gt;list item&lt;/strong&gt; &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;&lt;strong&gt;table&lt;/strong&gt; &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;etc...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;Pour aller plus loin avec les types d'éléments, la page sur les &lt;a href="https://developer.mozilla.org/fr/docs/Web/HTML/Cat%C3%A9gorie_de_contenu"&gt;catégories de contenu&lt;/a&gt; du MDN est très complète&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="les-liens" class="is-anchor"&gt;Les liens&lt;/h2&gt;
+Les liens hypertextes sont la base du web, ils permettent de naviguer au sein d'un même site ou vers des sites distants.
+
+Plusieurs types de cibles sont donc possible
+&lt;ul&gt;
+ 	&lt;li&gt;Liens dans la même page | &lt;strong&gt;les ancres&lt;/strong&gt;&lt;/li&gt;
+ 	&lt;li&gt;Liens dans d'autres pages du même site | &lt;strong&gt;les chemins relatifs&lt;/strong&gt;&lt;/li&gt;
+ 	&lt;li&gt;Liens vers des sites distants | &lt;strong&gt;les chemins absolus&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+Quelque soit la cible, l'élément HTML reste le même, il s'agit de &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;; l'attribut &lt;code&gt;href&lt;/code&gt; permettra de différencier les différentes destinations
+&lt;h3 id="les-ancres" class="is-anchor"&gt;Les ancres&lt;/h3&gt;
+Les ancres permettent de naviguer dans la même page grâce à l'attribut &lt;code&gt;id&lt;/code&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;header id="header-page"&amp;gt;
+  &amp;lt;h1&amp;gt;Le blog&amp;lt;/h1&amp;gt;
+  ...
+&amp;lt;/header&amp;gt;
+
+...
+
+&amp;lt;a href="#header-page"&amp;gt;Retour en haut de la page&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="url-relative" class="is-anchor"&gt;URL relative&lt;/h3&gt;
+Le chemin relatif vers un fichier depuis la page courante
+&lt;pre&gt;  + articles
+     - hero-corp.html
+     - jessica-jones.html
+  - index.html
+&lt;/pre&gt;
+En simulant une navigation entre les différents fichiers, la structure relative est plus claire
+
+Depuis &lt;strong&gt;index.html&lt;/strong&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;nav&amp;gt;
+  &amp;lt;a href="index.html"&amp;gt;Accueil&amp;lt;/a&amp;gt; &amp;lt;!--page courante--&amp;gt;
+  &amp;lt;a href="articles/hero-corp.html"&amp;gt;Hero Corp&amp;lt;/a&amp;gt;
+  &amp;lt;a href="articles/jessica-jones.html"&amp;gt;Jessica Jones&amp;lt;/a&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+Pour atteindre &lt;code&gt;Hero Corp&lt;/code&gt; il faut d'abord aller dans &lt;code&gt;articles/&lt;/code&gt;, le répertoire qui le contient
+
+Depuis &lt;strong&gt;articles/hero-corp.html&lt;/strong&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;nav&amp;gt;
+  &amp;lt;a href="../index.html"&amp;gt;Accueil&amp;lt;/a&amp;gt;
+  &amp;lt;a href="hero-corp.html"&amp;gt;Hero Corp&amp;lt;/a&amp;gt; &amp;lt;!--page courante--&amp;gt;
+  &amp;lt;a href="jessica-jones.html"&amp;gt;Jessica Jones&amp;lt;/a&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+Pour retourner à &lt;code&gt;Accueil&lt;/code&gt; il faut d'abord remonter d'un le répertoire avec &lt;code&gt;../&lt;/code&gt;
+
+Pour aller à &lt;code&gt;Jessica Jones&lt;/code&gt; il suffit de le cibler directement, il se trouve dans le même répertoire
+
+Depuis &lt;strong&gt;articles/jessica-jones.html&lt;/strong&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;&amp;lt;nav&amp;gt;
+  &amp;lt;a href="../index.html"&amp;gt;Accueil&amp;lt;/a&amp;gt;
+  &amp;lt;a href="hero-corp.html"&amp;gt;Hero Corp&amp;lt;/a&amp;gt; 
+  &amp;lt;a href="jessica-jones.html"&amp;gt;Jessica Jones&amp;lt;/a&amp;gt; &amp;lt;!--page courante--&amp;gt;
+&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="url-absolue" class="is-anchor"&gt;URL absolue&lt;/h3&gt;
+Les URLs absolues sont composées de 3 parties
+
+Exemple : &lt;code&gt;http://blog-heroique.com/articles/hero-corp.html&lt;/code&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;&lt;strong&gt;le protocle&lt;/strong&gt; &lt;code&gt;http://&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;&lt;strong&gt;le domaine&lt;/strong&gt; &lt;code&gt;blog-heroique.com&lt;/code&gt;&lt;/li&gt;
+ 	&lt;li&gt;&lt;strong&gt;le chemin du fichier&lt;/strong&gt; &lt;code&gt;articles/hero-corp.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</textarea></div>
+</div>
+
+
+                            <label for="proposal-message" class="recap-edit-form__label">Pourquoi cette modification ?</label>
+                <textarea placeholder="Décris brièvement les modifications que tu as apporté ..." required id="proposal-message" name="proposal_message" class="recap-edit-form__textarea"></textarea>
+            
+            <button name="student_edit_fiche" class="action-button recap-edit-form__submit">
+                Soumettre ma proposition            </button>
+        </form>
+    </div>
+  </article>
+
+<div class="tools ">
+  <button type="button" class="tools__btn tooltip tools__btn--print">
+    <span class="tooltip__info">Imprimer</span>
+    <i class="icon icon-printer"></i>
+  </button>
+  <button data-size="small" type="button" class="tools__btn tools__btn--font tooltip">
+    <span class="tooltip__info">Texte petit</span>
+    <i class="icon icon-type icon--half"></i>
+  </button>
+  <button data-size="medium" type="button" class="tools__btn tools__btn--font tools__btn--active tooltip">
+    <span class="tooltip__info">Texte moyen</span>
+    <i class="icon icon-type"></i>
+  </button>
+  <button data-size="big" type="button" class="tools__btn tools__btn--font tooltip">
+    <span class="tooltip__info">Texte gros</span>
+    <i class="icon icon-type icon--double"></i>
+  </button>
+      <button type="button" class="tools__btn tools__btn--edit tooltip">
+      <span class="tooltip__info">Proposer une modification de la fiche</span>
+      <i class="icon icon-edit"></i>
+    </button>
+  </div>  </div>
+</div>
+
+  <aside class="main__sidebar">
+      
+<nav class="content-nav">
+  <div class="content-nav__block">
+                <h3 class="content-nav__title">Catégories</h3>
+
+        <ul class="content-nav__list">
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/adminsys/">adminsys</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/apotheose/">apotheose</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/bdd/">bdd</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/css/">css</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/culture-dev/">culture-dev</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/devops/">devops</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/gestion-projet/">gestion-projet</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/git/">git</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/html/">html</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/js/">js</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/ldc/">ldc</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/node/">node</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/outils/">outils</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/php/">php</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/react/">react</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/reseau/">reseau</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/securite/">sécurité</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/securite-avancee/">sécurité-avancée</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/seo/">seo</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/serveur/">serveur</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/spe/">spe</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/symfony/">symfony</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/team-work/">team-work</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/titre-pro/">titre-pro</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/uml/">uml</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/vscode/">vscode</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/categorie/wordpress/">wordpress</a>
+            </li>
+
+                  </ul>
+                        <h3 class="content-nav__title">Mots clés</h3>
+
+        <ul class="content-nav__list">
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/collaboration/">collaboration</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/editeur/">éditeur</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/ejs/">ejs</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/express/">express</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/microservices/">microservices</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/middleware/">middleware</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/nodejs/">nodejs</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/npm/">npm</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/outils/">outils</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/packages/">packages</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/plugins/">plugins</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/serveur/">serveur</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/vscode/">vscode</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/vue/">vue</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/vue-cli/">vue cli</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/vue-js/">Vue js</a>
+            </li>
+
+          
+            <li class="content-nav__list__item">
+              <a href="https://kourou.oclock.io/ressources/fiches-recap/etiquette/vue-ui/">vue ui</a>
+            </li>
+
+                  </ul>
+              </div>
+  </nav>
+  </aside>
+
+
+</main>  <script>
+    var ALERT_API = 'https://kourou.oclock.io/wp-json/alert';
+    var ALERT_ICON_FOLDER = 'https://kourou.oclock.io/content/themes/oclock/public/';
+  </script>
+  
+
+
+<script type='text/javascript' id='app-js-extra'>
+/* <![CDATA[ */
+var EXPLORER_API = {"baseUrl":"\/"};
+/* ]]> */
+</script>
+<script type="module" src='https://kourou.oclock.io/content/themes/oclock/public/index.bce4a319.js' id='app-js'></script>
+<script type='text/javascript' id='utils-js-extra'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/wp\/","uid":"4139","time":"1695065828","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/utils.min.js?ver=6.3.1' id='utils-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-admin/js/editor.min.js?ver=6.3.1' id='editor-js'></script>
+<script id="editor-js-after" type="text/javascript">
+window.wp.oldEditor = window.wp.editor;
+</script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after" type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608' id='wp-a11y-js'></script>
+<script type='text/javascript' id='wplink-js-extra'>
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Ins\u00e9rer\/modifier un lien","update":"Mettre \u00e0 jour","save":"Ajouter un lien","noTitle":"(pas de titre)","noMatchesFound":"Aucun r\u00e9sultat.","linkSelected":"Lien s\u00e9lectionn\u00e9.","linkInserted":"Lien ins\u00e9r\u00e9.","minInputLength":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/wplink.min.js?ver=6.3.1' id='wplink-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/jquery/ui/menu.min.js?ver=1.13.2' id='jquery-ui-menu-js'></script>
+<script type='text/javascript' id='jquery-ui-autocomplete-js-extra'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.13.2' id='jquery-ui-autocomplete-js'></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "https://kourou.oclock.io/wp/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {'editpost':{theme:"modern",skin:"lightgray",language:"fr",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-49110-20201110",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"fr-FR",wp_keep_scroll_position:false,wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Insert\/edit link":"metaK","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Add Media":"accessM","Keyboard Shortcuts":"accessH"},content_css:"https://kourou.oclock.io/wp/wp-includes/css/dashicons.min.css?ver=6.3.1,https://kourou.oclock.io/wp/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=6.3.1,https://kourou.oclock.io/content/plugins/oclock/public/editor.css",plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,image",external_plugins:{"code_mce_buttons":"https:\/\/kourou.oclock.io\/content\/plugins\/oclock\/public\/mce-code-buttons.js"},selector:"#editpost",wpautop:true,indent:false,toolbar1:"formatselect,bold,italic,bullist,numlist,blockquote,alignleft,aligncenter,alignright,link,wp_more,spellchecker,fullscreen,wp_adv,add_code_mce_button",toolbar2:"strikethrough,hr,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"editpost post-type-ficherecap post-status-publish page-template-default locale-fr-fr"}},
+			qtInit: {},
+			ref: {plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,image",theme:"modern",language:"fr"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/tinymce/tinymce.min.js?ver=49110-20201110' id='wp-tinymce-root-js'></script>
+<script type='text/javascript' src='https://kourou.oclock.io/wp/wp-includes/js/tinymce/plugins/compat3x/plugin.min.js?ver=49110-20201110' id='wp-tinymce-js'></script>
+<script type='text/javascript'>
+tinymce.addI18n( 'fr', {"New document":"Nouveau document","Headings":"En-t\u00eates","Heading 1":"Titre 1","Heading 2":"Titre 2","Heading 3":"Titre 3","Heading 4":"Titre 4","Heading 5":"Titre 5","Heading 6":"Titre 6","Blocks":"Sections","Paragraph":"Paragraphe","Blockquote":"Bloc de citation","Preformatted":"Pr\u00e9format\u00e9","Address":"Adresse","Underline":"Souligner","Strikethrough":"Barrer","Subscript":"Indice","Superscript":"Exposant","Clear formatting":"Nettoyer la mise en forme","Bold":"Gras","Italic":"Italique","Source code":"Code source","Font Family":"Famille de polices","Font Sizes":"Tailles de la police","Align center":"Centrer","Align right":"Aligner \u00e0 droite","Align left":"Aligner \u00e0 gauche","Justify":"Justifier","Increase indent":"Augmenter l\u2019indentation","Decrease indent":"Diminuer l\u2019indentation","Cut":"Couper","Copy":"Copier","Paste":"Coller","Select all":"Tout s\u00e9lectionner","Undo":"Annuler","Redo":"R\u00e9tablir","Ok":"OK","Cancel":"Annuler","Close":"Fermer","Visual aids":"Aides visuelles","Bullet list":"Liste non ordonn\u00e9e","Numbered list":"Liste ordonn\u00e9e","Square":"Carr\u00e9","Default":"Par d\u00e9faut","Circle":"Cercle","Disc":"Rond","Lower Greek":"Minuscules grecques","Lower Alpha":"Minuscules alphanum\u00e9riques","Upper Alpha":"Majuscules alphanum\u00e9riques","Upper Roman":"Chiffres romains majuscules","Lower Roman":"Chiffres romains minuscules ","Name":"Nom","Anchor":"Ancre","Anchors":"Ancres","Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores.":"l\u2019ID doit commencer par une lettre, suivie uniquement par des lettres, chiffres, tirets, points, virgules ou tirets-bas.","Id":"ID","Document properties":"Propri\u00e9t\u00e9s du document","Title":"Titre","Keywords":"Mots-cl\u00e9s","Encoding":"Encodage","Author":"Auteur\u00a0\/ autrice","Insert\/edit image":"Ins\u00e9rer\/modifier une image","General":"G\u00e9n\u00e9ral","Advanced":"Avanc\u00e9","Source":"Adresse web source","Border":"Bordure","Constrain proportions":"Respecter les proportions","Vertical space":"Espace vertical","Image description":"Description de l\u2019image","Insert image":"Ins\u00e9rer une image","Date\/time":"Date\/heure","Insert date\/time":"Ins\u00e9rer l\u2019heure\/la date","Table of Contents":"Table des mati\u00e8res","Insert\/Edit code sample":"Ins\u00e9rer\/modifier le code d\u2019exemple","Language":"Langue","Media":"M\u00e9dias","Insert\/edit media":"Ins\u00e9rer\/modifier un m\u00e9dia","Poster":"Couverture","Alternative source":"Source alternative","Paste your embed code below:":"Collez votre code de contenu embarqu\u00e9 ci-dessous\u00a0:","Insert video":"Ins\u00e9rer une vid\u00e9o","Embed":"Contenu embarqu\u00e9","Special character":"Caract\u00e8re sp\u00e9cial","Right to left":"Droite \u00e0 gauche (RTL)","Left to right":"Gauche \u00e0 droite","Emoticons":"\u00c9motic\u00f4nes","Nonbreaking space":"Espace ins\u00e9cable","Page break":"Saut de page","Paste as text":"Coller en texte","Preview":"Pr\u00e9visualiser","Print":"Imprimer","Save":"Enregistrer","Fullscreen":"Plein \u00e9cran","Horizontal line":"Ligne horizontale","Horizontal space":"Espace horizontal","Restore last draft":"R\u00e9tablir le dernier brouillon","Insert\/edit link":"Ins\u00e9rer\/modifier un lien","Remove link":"Retirer le lien","Link":"Lien","Insert link":"Ins\u00e9rer un lien","Target":"Cible","New window":"Nouvelle fen\u00eatre","Text to display":"Texte \u00e0 afficher","Url":"URL","The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?":"L\u2019URL que vous avez saisie semble \u00eatre une adresse e-mail. Voulez-vous y ajouter le pr\u00e9fixe \u00ab\u00a0mailto:\u00a0\u00bb n\u00e9cessaire\u00a0?","The URL you entered seems to be an external link. Do you want to add the required http:\/\/ prefix?":"L\u2019URL que vous avez saisie semble \u00eatre un lien externe. Voulez-vous ajouter le pr\u00e9fixe \u00ab\u00a0http:\/\/\u00a0\u00bb n\u00e9cessaire\u00a0?","Color":"Couleur","Custom color":"Couleur personnalis\u00e9e","Custom...":"Personnalis\u00e9e\u2026","No color":"Aucune couleur","G":"V","Could not find the specified string.":"Impossible de trouver la cha\u00eene sp\u00e9cifi\u00e9e.","Replace":"Remplacer","Next":"Suivant","Prev":"Pr\u00e9c.","Whole words":"Mots entiers","Find and replace":"Rechercher et remplacer","Replace with":"Remplacer par","Find":"Trouver","Replace all":"Tout remplacer","Match case":"Respecter la casse","Spellcheck":"V\u00e9rifier l\u2019orthographe","Finish":"Terminer","Ignore all":"Tout ignorer","Ignore":"Ignorer","Add to Dictionary":"Ajouter au dictionnaire","Insert table":"Ins\u00e9rer un tableau","Delete table":"Supprimer le tableau","Table properties":"Propri\u00e9t\u00e9s du tableau","Row properties":"Propri\u00e9t\u00e9s de la ligne du tableau","Cell properties":"Propri\u00e9t\u00e9s de la cellule du tableau","Border color":"Couleur de bordure","Row":"Ligne","Rows":"Lignes","Column":"Colonne","Cols":"Colonnes","Cell":"Cellule","Header cell":"Cellule d\u2019en-t\u00eate","Header":"En-t\u00eate","Body":"Corps","Footer":"Pied de page","Insert row before":"Ins\u00e9rer une ligne avant","Insert row after":"Ins\u00e9rer une ligne apr\u00e8s","Insert column before":"Ins\u00e9rer une colonne avant","Insert column after":"Ins\u00e9rer une colonne apr\u00e8s","Paste row before":"Coller la ligne du tableau avant","Paste row after":"Coller la ligne du tableau apr\u00e8s","Delete row":"Supprimer la ligne","Delete column":"Supprimer la colonne","Cut row":"Couper la ligne du tableau","Copy row":"Copier la ligne du tableau","Merge cells":"Fusionner les cellules du tableau","Split cell":"Diviser une cellule du tableau","Height":"Hauteur","Width":"Largeur","Caption":"L\u00e9gende","Alignment":"Alignement","H Align":"Alignement H","Left":"Gauche","Center":"Centre","Right":"Droite","None":"Aucun","V Align":"Alignement V","Top":"Haut","Middle":"Milieu","Bottom":"Bas","Row group":"Groupe de lignes","Column group":"Groupe de colonnes","Row type":"Type de ligne","Cell type":"Type de cellule","Cell padding":"Marge int\u00e9rieure des cellules","Cell spacing":"Espacement entre les cellules","Scope":"Port\u00e9e","Insert template":"Ins\u00e9rer un mod\u00e8le","Templates":"Mod\u00e8les","Background color":"Couleur d\u2019arri\u00e8re plan","Text color":"Couleur du texte","Show blocks":"Montrer les sections","Show invisible characters":"Voir les caract\u00e8res invisibles","Words: {0}":"Mots\u00a0: {0}","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Coller est maintenant en mode texte. Les contenus seront dor\u00e9navant coll\u00e9s en mode texte jusqu\u2019\u00e0 ce que cette option soit annul\u00e9e.\n\nSi vous souhaitez coller du contenu enrichi en provenance de Microsoft Word, essayez de d\u00e9sactiver cette option. L\u2019\u00e9diteur nettoiera automatiquement les textes copi\u00e9s depuis Word.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Zone de texte enrichi. Appuyez sur Alt-Maj-H pour obtenir de l\u2019aide.","Rich Text Area. Press Control-Option-H for help.":"Zone de texte enrichi. Appuyez sur Contr\u00f4le-Option-H (Ctrl-Alt-H) pour consulter l\u2019aide.","You have unsaved changes are you sure you want to navigate away?":"Les modifications que vous avez faites seront perdues si vous changez de page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Votre navigateur ne supporte pas les acc\u00e8s directs au presse-papier. Veuillez utiliser les raccourcis clavier ou le menu \u00c9dition de votre navigateur.","Insert":"Ins\u00e9rer","File":"Fichier","Edit":"Modifier","Tools":"Outils","View":"Voir","Table":"Tableau","Toolbar Toggle":"Ouvrir\/fermer la barre d\u2019outils","Insert Read More tag":"Ins\u00e9rer la balise \u00ab\u00a0Lire la suite\u2026\u00a0\u00bb","Insert Page Break tag":"Ins\u00e9rer la balise \u00ab\u00a0Saut de page\u00a0\u00bb","Read more...":"Lire la suite\u2026","Distraction-free writing mode":"Mode d\u2019\u00e9criture sans distraction","No alignment":"Pas d\u2019alignement","Remove":"Retirer","Edit|button":"Modifier","Paste URL or type to search":"Collez l\u2019URL ou saisissez une recherche","Apply":"Appliquer","Link options":"Options du lien","Visual":"Visuel","Text":"Texte","Add Media":"Ajouter un m\u00e9dia","Keyboard Shortcuts":"Raccourcis clavier","Classic Block Keyboard Shortcuts":"Raccourcis clavier de bloc classique","Default shortcuts,":"Raccourcis par d\u00e9faut,","Additional shortcuts,":"Raccourcis suppl\u00e9mentaires,","Focus shortcuts:":"Raccourcis de s\u00e9lections\u00a0:","Inline toolbar (when an image, link or preview is selected)":"Barre d\u2019outils en ligne (quand une image, un lien ou un aper\u00e7u est s\u00e9lectionn\u00e9)","Editor menu (when enabled)":"Menu de l\u2019\u00e9diteur (lorsqu\u2019il est activ\u00e9)","Editor toolbar":"Barre d\u2019outils de l\u2019\u00e9diteur","Elements path":"Chemin des \u00e9l\u00e9ments","Ctrl + Alt + letter:":"Ctrl + Alt + lettre\u00a0:","Shift + Alt + letter:":"Shift + Alt + lettre\u00a0:","Cmd + letter:":"Cmd + lettre\u00a0:","Ctrl + letter:":"Ctrl + lettre\u00a0:","Letter":"Lettre","Warning: the link has been inserted but may have errors. Please test it.":"Attention\u00a0: le lien a bien \u00e9t\u00e9 ins\u00e9r\u00e9 mais peut contenir des erreurs. Veuillez le tester.","To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons.":"Pour d\u00e9placer la s\u00e9lection vers d\u2019autres boutons, utilisez la touche Tab ou les touches fl\u00e9ch\u00e9es. Pour revenir \u00e0 l\u2019\u00e9diteur, appuyez sur la touche \u00c9chap ou utilisez l\u2019un des boutons.","When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo.":"Lorsque vous d\u00e9marrez un nouveau paragraphe avec l\u2019un de ces raccourcis de mise en forme suivi par une espace, la mise en forme sera appliqu\u00e9e automatiquement. Appuyez sur Retour arri\u00e8re ou \u00c9chap. pour annuler.","The following formatting shortcuts are replaced when pressing Enter. Press Escape or the Undo button to undo.":"Les raccourcis de mise en forme suivants sont remplac\u00e9s en appuyant sur Entr\u00e9e. Appuyez sur \u00c9chap ou sur le bouton Annuler pour revenir en arri\u00e8re.","The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo.":"Les raccourcis de mise en forme du groupe ci-dessous s\u2019appliquent au fur et \u00e0 mesure que vous \u00e9crivez ou lorsque vous les ins\u00e9rez autour d\u2019un texte d\u2019un paragraphe. Appuyez sur \u00c9chap ou sur le bouton Annuler pour revenir en arri\u00e8re."});
+tinymce.ScriptLoader.markDone( 'https://kourou.oclock.io/wp/wp-includes/js/tinymce/langs/fr.js' );
+</script>
+		<script type="text/javascript">
+		var ajaxurl = "/wp/wp-admin/admin-ajax.php";
+		( function() {
+			var initialized = [];
+			var initialize  = function() {
+				var init, id, inPostbox, $wrap;
+				var readyState = document.readyState;
+
+				if ( readyState !== 'complete' && readyState !== 'interactive' ) {
+					return;
+				}
+
+				for ( id in tinyMCEPreInit.mceInit ) {
+					if ( initialized.indexOf( id ) > -1 ) {
+						continue;
+					}
+
+					init      = tinyMCEPreInit.mceInit[id];
+					$wrap     = tinymce.$( '#wp-' + id + '-wrap' );
+					inPostbox = $wrap.parents( '.postbox' ).length > 0;
+
+					if (
+						! init.wp_skip_init &&
+						( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) &&
+						( readyState === 'complete' || ( ! inPostbox && readyState === 'interactive' ) )
+					) {
+						tinymce.init( init );
+						initialized.push( id );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof tinymce !== 'undefined' ) {
+				if ( tinymce.Env.ie && tinymce.Env.ie < 11 ) {
+					tinymce.$( '.wp-editor-wrap ' ).removeClass( 'tmce-active' ).addClass( 'html-active' );
+				} else {
+					if ( document.readyState === 'complete' ) {
+						initialize();
+					} else {
+						document.addEventListener( 'readystatechange', initialize );
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="a32e329f33" />		<h1 id="link-modal-title">Insérer/modifier un lien</h1>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">
+			Fermer		</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Saisissez l’URL de destination</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Texte du lien</span>
+					<input id="wp-link-text" type="text" /></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target" /> Ouvrir le lien dans un nouvel onglet</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Ou alors, faites un lien vers l’un des contenus de votre site</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Rechercher</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content" />
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">Aucun mot n’a été donné pour cette recherche. Voici les recherches précédentes.</em>
+						<em class="query-notice-hint screen-reader-text">
+							Recherchez ou utilisez les flèches haut et bas pour choisir un élément.						</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Annuler</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Ajouter un lien" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		
+</body>
+</html>
